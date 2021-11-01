@@ -29,7 +29,6 @@ table {
 
 #textoReadMeBox {
     font-size: 20px;
-    /*text-align: justify;*/ 
     padding: 10px;
     margin: 0;
 }
@@ -68,9 +67,6 @@ a.linkExercicios:hover, a.linkExercicios:active {
 
 ul {
     list-style-type: none;
-    /*background-color: rgba(0, 0, 0, 0.3)
-    width: 100%;
-    box-sizing: border-box;*/
 }
 
 li {
@@ -99,7 +95,6 @@ header {
 }
 
 input[type=number] {
-    /*height: 22px;*/
     border: none;
 }
 
@@ -107,7 +102,6 @@ input[type=button] {
     background-color: rgba(0, 0, 0, 0.3);
     border: none;
     color: white;
-    /*height: 23px;*/
     font-size: 14px;
 }
 
