@@ -1,0 +1,152 @@
+body {
+    background-image: linear-gradient(to right, #c299ff, tomato);
+    color: white;
+}
+
+table {
+    margin: auto;
+    position: absolute;
+    overflow:auto;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+#readMeBox {
+    background: rgba(0, 0, 0, 0.3);
+    height: 400px;
+    width: 400px;
+}
+
+#tituloPaginaInicio {
+    font-size: 65px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: 1px 2px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    margin: 3px;
+}
+
+#textoReadMeBox {
+    font-size: 20px;
+    /*text-align: justify;*/ 
+    padding: 10px;
+    margin: 0;
+}
+
+#linkCursoEmVideo {
+    text-decoration: underline;
+}
+
+#menuExerciciosBox {
+    background: rgba(0, 0, 0, 0.3);
+    height: 400px;
+    width: 500px;
+    text-align: center;
+}
+
+a.linkExercicios:link, a.linkExercicios:visited {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    padding: 8px;
+    width: 400px;
+    height: 20px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+a.linkExercicios:hover, a.linkExercicios:active {
+    background-color: tomato;
+    color: white;
+  }
+
+#exercicios {
+    vertical-align: middle;
+}
+
+ul {
+    list-style-type: none;
+    /*background-color: rgba(0, 0, 0, 0.3)
+    width: 100%;
+    box-sizing: border-box;*/
+}
+
+li {
+    display: inline-block;
+    font: normal 13.5px arial;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.material-icons {
+    vertical-align:sub;
+    font-size: 1.5em;
+}
+
+header {
+    text-align: center;
+}
+
+.titulosExercicios {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 50px;
+    text-shadow: 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+input[type=number] {
+    /*height: 22px;*/
+    border: none;
+}
+
+input[type=button] {
+    background-color: rgba(0, 0, 0, 0.3);
+    border: none;
+    color: white;
+    /*height: 23px;*/
+    font-size: 14px;
+}
+
+input[type=button]:hover{
+    background-color: tomato;
+}
+
+#sectionHoraDoDia {
+    padding: 15px;
+    height: auto;
+    margin: auto;
+    text-align: center;
+    font: normal 20px arial;
+    padding: 5px;
+}  
+
+#imagemHoraDoDiaBox {
+    padding-top: 20px;
+}
+
+.sectionDosExercicios {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    width: 500px;
+    height: auto;
+    margin: auto;
+    font: normal 17px arial;
+}
+
+select {
+    width: 170px;    
+    margin-bottom: 5px;
+}
+
+#resultadoAnalisador {
+    margin-top: 15px;
+}
+
+
+
+
+

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link rel="stylesheet" href="estilo.css">
+
+    <title>Contador</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="inicio.html"><i class="material-icons">arrow_back</i></a></li>
+            <li><a href="inicio.html">Retorne ao menu inicial</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1 class="titulosExercicios">Vamos Contar!</h1>
+    </header>
+    <section class="sectionDosExercicios">
+        <div>
+            <p>Início: <input type="number" id="numeroInicioContador"></p>                        
+            <p>Fim: <input type="number" class="col-sm-10" id="numeroFimContador"></p>                
+            <p>Passo: <input type="number" id="numeroPassoContador"></p>
+            <p>                
+                <input type="button" value="Contar" onclick="contar()">
+            </p>            
+        </div>
+        <div id="resultadoContador">
+            Preparando a contagem...
+        </div>
+        <div id="limparTelaContador"></div>
+    </section>
+    <script src="script.js"></script>    
+</body>
+</html>
