@@ -6,34 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="styles.css">
     
     <title>Tabuada</title>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="inicio.html"><i class="material-icons">arrow_back</i></a></li>
-            <li><a href="inicio.html">Retorne ao menu inicial</a></li>
-        </ul>
+    <nav class="return-nav">
+        <a href="index.html"><i class="material-icons">arrow_back</i></a>
     </nav>
-    <header>
-        <h1 class="titulosExercicios">Tabuada</h1>
-    </header>
-    <section class="sectionDosExercicios">
-        <div>
-            <p>
-                Número: <input type="number" id="numeroDeEntradaTabuada">               
-                <input type="button" value="Gerar Tabuada" onclick="gerarTabuada()">
-            </p>
-        </div>
-        <div>
-            <select id="resultadoTabuada" size="11">
-                <option>Digite um número acima</option>       
-            </select>
-        </div>
-        <div id="limparTabuada"></div>
-    </section>  
+    <main class="container-titulo-exercicio">
+        <h1 class="titulo-exercicio">Tabuada</h1>
+        <section class="exercicio-container primary-txt">
+            <div>
+                <label>Número:</label>
+                <input type="number" class="numeroDeEntradaTabuada">
+                <button class="primary-btn" onclick="gerarTabuada()">Gerar tabuada</button>
+            </div>
+            <div>
+                <select class="resultadoTabuada margin-10px" size="11">
+                    <option>Digite um número acima</option>       
+                </select>
+            </div>
+            <button onclick="resetFormsTabuada()" class="reset-forms primary-btn margin-10px">Limpar tela</button>
+        </section>
+    </main>
+    <footer>&copy; Desenvolvido por Mariana Athayde</footer>
 <script src="script.js"></script>    
 </body>
 </html>

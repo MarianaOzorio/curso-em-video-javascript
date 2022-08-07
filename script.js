@@ -1,11 +1,15 @@
+//Variável utilizada em mais de uma função
+
+var reset = document.querySelector('.reset-forms') 
+
 //Hora do Dia
 
 function carregarHoraDoDia() {
-    var mensagemInformandoHora = window.document.getElementById('mensagemInformandoHora')
-    var fotoHoraDoDia = window.document.getElementById('imagemHoraDoDia')
-    var data = new Date()
-    var hora = data.getHours()
-    var minutos = data.getMinutes()
+    let mensagemInformandoHora = document.querySelector('.msgHoraDoDia')
+    let fotoHoraDoDia = document.querySelector('.imgHoraDoDia')
+    let data = new Date()
+    let hora = data.getHours()
+    let minutos = data.getMinutes()
 
     if (minutos < 10) {
         minutos = `0${minutos}`
@@ -28,17 +32,17 @@ function carregarHoraDoDia() {
 //Verificador de Idade
 
 function verificarIdade() {
-    var dataVerificador = new Date()
-    var ano = dataVerificador.getFullYear()
-    var anoDeNascimento = document.getElementById('anoDeNascimento')
-    var resultadoVerificadorIdade = document.querySelector('div#resultadoVerificadorIdade')
+    let dataVerificador = new Date()
+    let ano = dataVerificador.getFullYear()
+    let anoDeNascimento = document.querySelector('.anoDeNascimento')
+    let resultadoVerificadorIdade = document.querySelector('.resultadoVerificadorIdade')
     if (anoDeNascimento.value.length == 0 || anoDeNascimento.value > ano) {
         window.alert('ERROR! Verifique se os dados estão corretos.')
     } else {
-        var sexo = document.getElementsByName('radsex')
-        var idade = ano - Number(anoDeNascimento.value)
-        var genero = ''
-        var img = document.createElement('img')
+        let sexo = document.getElementsByName('radsex')
+        let idade = ano - Number(anoDeNascimento.value)
+        let genero = ''
+        let img = document.createElement('img')
         img.setAttribute('id', 'foto')
         if (sexo[0].checked) {
             genero = 'um homem'
@@ -72,9 +76,8 @@ function verificarIdade() {
 //Analisador de Numeros
 
 let sequenciaDeNumeros = []    
-let numeroAnalisador = document.getElementById('numeroAnalisador') 
-let telaComNumerosAnalisador = document.getElementById('telaComNumerosAnalisador')
-let limparAnalisador = document.getElementById('limparAnalisador')
+let numeroAnalisador = document.querySelector('.numeroAnalisador') 
+let telaComNumerosAnalisador = document.querySelector('.telaComNumerosAnalisador')
 
 function adicionar() {   
 
@@ -121,34 +124,33 @@ function finalizarAnalisador() {
         resultadoAnalisador.innerHTML += `Somando todos os valores, temos ${somaTotal} <br>`
         resultadoAnalisador.innerHTML += `A média dos valores digitados é ${media}`
 
-        limparAnalisador.innerHTML = '<br><input type="button" value="Limpar Tela" onclick="limparTelaAnalisador()">'
+        reset.style.visibility = "visible"        
     }    
 }
 
-function limparTelaAnalisador() {
+function resetFormsAnalisador() {
     numeroAnalisador.value = ''
     telaComNumerosAnalisador.innerHTML = ''
     resultadoAnalisador.innerHTML = ''
-    limparAnalisador.innerHTML = ''
     sequenciaDeNumeros.length = 0
+    reset.style.visibility = "hidden"
 }
 
 //Contador
 
-let inicioContador = document.getElementById('numeroInicioContador')
-let fimContador = document.getElementById('numeroFimContador')
-let passoContador = document.getElementById('numeroPassoContador')
-var resultadoContador = document.getElementById('resultadoContador')
-let limparContador = document.getElementById('limparTelaContador')
+let inicioContador = document.querySelector('.numeroInicioContador')
+let fimContador = document.querySelector('.numeroFimContador')
+let passoContador = document.querySelector('.numeroPassoContador')
+var resultadoContador = document.querySelector('.resultadoContador')
 
 function contar() {
     if (inicioContador.value.length == 0 || fimContador.value.length == 0 || passoContador.value.length == 0) {        
         window.alert('ERROR! Impossível contar. Confira se os números são válidos')
     } else {
         resultadoContador.innerHTML = 'Contando: '
-        var numeroInicio = Number(inicioContador.value)
-        var numeroFim = Number(fimContador.value)
-        var numeroPasso = Number(passoContador.value)
+        let numeroInicio = Number(inicioContador.value)
+        let numeroFim = Number(fimContador.value)
+        let numeroPasso = Number(passoContador.value)
 
         if (numeroPasso <= 0) {
             window.alert('Passo inválido! Considerando passo 1')
@@ -162,25 +164,25 @@ function contar() {
         } else {
             for(let contagem = numeroInicio; contagem >= numeroFim; contagem -= numeroPasso) {
                 resultadoContador.innerHTML += `${contagem} \u{1F601} `
+           } 
         } 
-        } limparContador.innerHTML = '<br><input type="button" value="Limpar Tela" onclick="limparTelaContador()">'    
+        reset.style.visibility = "visible"
     }    
 }
 
-function limparTelaContador(){
+function resetFormsContador(){
     inicioContador.value = ''
     fimContador.value = ''
     passoContador.value = ''
     resultadoContador.innerHTML = ''
-    limparContador.innerHTML = ''
+    reset.style.visibility = "hidden"
 }
 
 //Tabuada
 
-let numeroDeEntradaTabuada = document.getElementById('numeroDeEntradaTabuada')
-let resultadoTabuada = document.getElementById('resultadoTabuada')
-let limparTabuada = document.getElementById('limparTabuada')    
-
+let numeroDeEntradaTabuada = document.querySelector('.numeroDeEntradaTabuada')
+let resultadoTabuada = document.querySelector('.resultadoTabuada')
+   
 function gerarTabuada() {
     
     if (numeroDeEntradaTabuada.value.length == 0) {
@@ -195,12 +197,12 @@ function gerarTabuada() {
             resultadoTabuada.appendChild(item)
             segundoFator++            
         }
-        limparTabuada.innerHTML = '<br><input type="button" value="Limpar Tela" onclick="limparTelaTabuada()">'
+        reset.style.visibility = "visible"
     }       
 }
 
-function limparTelaTabuada() {
+function resetFormsTabuada() {
     numeroDeEntradaTabuada.value = ''
     resultadoTabuada.innerHTML = '<select id="resultadoTabuada" size="11"><option>Digite um número acima</option></select>'   
-    limparTabuada.innerHTML = ''
+    reset.style.visibility = "hidden"
 }

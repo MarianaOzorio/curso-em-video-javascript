@@ -6,39 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="styles.css">
 
     <title>Verificador de Idade</title>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="inicio.html"><i class="material-icons">arrow_back</i></a></li>
-            <li><a href="inicio.html">Retorne ao menu inicial</a></li>
-        </ul>
+    <nav class="return-nav">
+        <a href="index.html"><i class="material-icons">arrow_back</i></a>
     </nav>
-    <header>
-        <h1 class="titulosExercicios">Verificador de Idade</h1>
-    </header>
-    <section class="sectionDosExercicios">
-        <div>
-            <p>Ano de Nascimento:
-                <input type="number" name="anoDeNascimento" id="anoDeNascimento" min="0">
-            </p>
-            <p>Sexo:
+    <main class="container-titulo-exercicio">
+        <h1 class="titulo-exercicio">Verificador de Idade</h1>
+        <section class="exercicio-container primary-txt">
+            <div>
+                <label>Ano de nascimento:</label>
+                <input type="number" name="anoDeNascimento" class="anoDeNascimento" min="0">
+            </div>
+            <div class="margin-10px">
+                <label>Sexo:</label>
                 <input type="radio" name="radsex" id="masculino" checked>
                 <label for="mas">Masculino</label>
                 <input type="radio" name="radsex" id="feminino">
                 <label for="fem">Feminino</label>
-            </p>
-            <p>
-                <input type="button" class="botao" value="Verificar" onclick="verificarIdade()">
-            </p>
-        </div>
-        <div id="resultadoVerificadorIdade">
-            Preencha os dados para ver o resultado
-        </div>
-    </section>
+            </div>
+            <button class="primary-btn margin-10px" onclick="verificarIdade()">Verificar</button>
+            <div class="resultadoVerificadorIdade">
+                Preencha os dados para ver o resultado
+            </div>
+        </section>
+    </main>
+    <footer>&copy; Desenvolvido por Mariana Athayde</footer>
     <script src="script.js"></script>    
 </body>
 </html>
