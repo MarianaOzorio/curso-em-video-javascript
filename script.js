@@ -98,8 +98,8 @@ function adicionar() {
         sequenciaDeNumeros.push(numAnalisador)
         sequenciaDeNumeros.sort()   
                         
-        let itemAddAnalisador = document.createElement('option')
-        itemAddAnalisador.text = `Valor ${numAnalisador} adicionado`
+        let itemAddAnalisador = document.createElement('p')
+        itemAddAnalisador.innerText = `Valor ${numAnalisador} adicionado`
         telaComNumerosAnalisador.appendChild(itemAddAnalisador)       
     }
     numeroAnalisador.value = ''
