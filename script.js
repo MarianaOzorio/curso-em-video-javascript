@@ -182,6 +182,7 @@ function resetFormsContador(){
 
 let numeroDeEntradaTabuada = document.querySelector('.numeroDeEntradaTabuada')
 let resultadoTabuada = document.querySelector('.resultadoTabuada')
+let resultBox = document.querySelector('result-box')
    
 function gerarTabuada() {
     
@@ -192,10 +193,10 @@ function gerarTabuada() {
         let segundoFator = 0
         resultadoTabuada.innerHTML = ''   
         while (segundoFator <= 10) {
-            let item = document.createElement('option')
-            item.text = `${primeiroFator} x ${segundoFator} = ${primeiroFator * segundoFator}`
+            let item = document.createElement('p')
+            item.innerText = `${primeiroFator} x ${segundoFator} = ${primeiroFator * segundoFator}`
             resultadoTabuada.appendChild(item)
-            segundoFator++            
+            segundoFator++ 
         }
         reset.style.visibility = "visible"
     }       
@@ -203,6 +204,6 @@ function gerarTabuada() {
 
 function resetFormsTabuada() {
     numeroDeEntradaTabuada.value = ''
-    resultadoTabuada.innerHTML = '<select id="resultadoTabuada" size="11"><option>Digite um número acima</option></select>'   
+    resultadoTabuada.innerHTML = '<div><p>Digite um número acima</p></div>'   
     reset.style.visibility = "hidden"
 }
