@@ -171,6 +171,7 @@ footer {
 }
 
 .primary-btn {
+    width:fit-content;
     background-color: rgba(0, 0, 0, 0.3);
     color: white;
     margin: 2px 0px 2px 0px;
@@ -210,6 +211,12 @@ footer {
 
     input[type=number] {
         width: 170px;
+        margin-right: 2px;
+    }
+
+    .input-button-row {
+        display: flex;
+        flex-direction: row;
     }
 }
 
