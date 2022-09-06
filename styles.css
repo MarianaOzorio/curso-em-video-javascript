@@ -10,6 +10,20 @@ body {
     color: #FFF;
 }
 
+.bg-gradiente {
+    background-image: linear-gradient(to right, #c299ff, #ff6347);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+}
+
+/*.contents {
+    position: absolute;
+}*/
+
 .return-nav {
     min-height: 25px;
     margin: 20px; 
@@ -153,7 +167,8 @@ input[type=number]:focus {
 }
 
 footer {
-    min-height: 30px;
+    /*min-height: 30px;*/
+    min-height: 8vh;
     position: relative;
     top: 20px;
     bottom: 0%;
@@ -162,6 +177,10 @@ footer {
     font-family: Arial, Helvetica, sans-serif;
     font-style: italic;
 }
+
+/*.footer-index {
+    position: absolute
+}*/
 
 /* CLASSE UTILITÁRIA */
 
