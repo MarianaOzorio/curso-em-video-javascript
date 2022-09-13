@@ -11,9 +11,8 @@ body {
 }
 
 .return-nav {
-    height: 25px;
+    min-height: 25px;
     margin: 20px; 
-    position: absolute;
 }
 
 .return-nav a {
@@ -85,7 +84,7 @@ body {
 }
 
 .container-titulo-exercicio {
-    height: 100vh;
+    min-height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
