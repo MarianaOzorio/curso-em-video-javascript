@@ -11,26 +11,23 @@
     <title>Tabuada</title>
 </head>
 <body>
-    <div class="bg-gradiente">
-        <nav class="return-nav">
-            <a href="index.html"><i class="material-icons">arrow_back</i></a>
-        </nav>
-        <main class="container-titulo-exercicio">
-            <h1 class="titulo-exercicio">Tabuada</h1>
-            <section class="exercicio-container primary-txt">
-                <label>Número:</label>
-                <div class="input-button-row">
-                    <input type="number" class="numeroDeEntradaTabuada">
-                    <button class="primary-btn" onclick="gerarTabuada()">Gerar tabuada</button>                
-                </div>
-                <div class="resultadoTabuada result-box margin-10px">
-                    <p>Digite um número acima</p>                 
-                </div>
-                <button onclick="resetFormsTabuada()" class="reset-forms primary-btn margin-10px">Limpar tela</button>
-            </section>
-        </main>
-        <footer>&copy; Desenvolvido por Mariana Athayde</footer>
-    </div>
+    <nav class="return-nav">
+        <a href="index.html"><i class="material-icons">arrow_back</i></a>
+    </nav>
+    <main class="container-titulo-exercicio">
+        <h1 class="titulo-exercicio">Tabuada</h1>
+        <section class="exercicio-container primary-txt">
+            <label>Número:</label>
+            <div class="input-button-row">
+                <input type="number" class="numeroDeEntradaTabuada">
+                <button class="primary-btn" onclick="gerarTabuada()">Gerar tabuada</button>                
+            </div>
+            <div class="resultadoTabuada result-box margin-10px">
+                <p>Digite um número acima</p>                 
+            </div>
+            <button onclick="resetFormsTabuada()" class="reset-forms primary-btn margin-10px">Limpar tela</button>
+        </section>
+    </main>
     <script src="script.js"></script>    
 </body>
 </html>

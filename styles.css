@@ -10,23 +10,10 @@ body {
     color: #FFF;
 }
 
-.bg-gradiente {
-    background-image: linear-gradient(to right, #c299ff, #ff6347);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100vh;
-    width: 100vw;
-    position: fixed;
-}
-
-/*.contents {
-    position: absolute;
-}*/
-
 .return-nav {
-    min-height: 25px;
+    height: 25px;
     margin: 20px; 
+    position: absolute;
 }
 
 .return-nav a {
@@ -39,7 +26,7 @@ body {
 }
 
 .index-main-container {
-    height: 90vh;
+    height: 100vh;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -98,7 +85,7 @@ body {
 }
 
 .container-titulo-exercicio {
-    min-height: 70vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -165,22 +152,6 @@ input[type=number]:focus {
     font-size: 0.8em;
     padding: 5px;
 }
-
-footer {
-    /*min-height: 30px;*/
-    min-height: 8vh;
-    position: relative;
-    top: 20px;
-    bottom: 0%;
-    font-size: 0.7em;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: italic;
-}
-
-/*.footer-index {
-    position: absolute
-}*/
 
 /* CLASSE UTILITÁRIA */
 
