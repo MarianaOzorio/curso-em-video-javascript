@@ -1,7 +1,5 @@
 # curso-em-video-javascript
 
-🚧 refatorando 🚧
-
 Solução dos exercícios propostos durante o curso de JavaScript/ECMAScript para iniciantes no [Curso em Vídeo](https://www.youtube.com/user/cursosemvideo).
 
 ### Exercícios:
@@ -24,3 +22,6 @@ Proposta: o usuário define um número para que a tabuada de multiplicação del
 - [Analisador de números](https://github.com/MarianaOzorio/curso-em-video-javascript/blob/main/analisador-de-numeros.html)
 
 Proposta: o usuário adiciona quantos números desejar e o programa retorna a quantidade de números, o maior número, o menor número, a soma de todos os números e a média dos valores.
+
+
+<img width="960" alt="image" src="https://user-images.githubusercontent.com/66336900/211936143-3eca0712-efd3-474b-b047-3b7d6f693ce4.png">
